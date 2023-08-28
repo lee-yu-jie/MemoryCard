@@ -11,7 +11,6 @@ body{
 }
 .header p{
   font-size: 30px;
-  width: 200px;
 }
 button{
   border-radius: 12px;
@@ -110,5 +109,18 @@ button{
   }
   100% {
     bottom: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 100vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: .5rem;
+    padding: 0 .5em;
+  }
+  .card{
+    aspect-ratio: 1 / 1;
   }
 }
